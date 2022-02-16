@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<!--Created by DINH HOANG VIET PHUONG - Created on Jun 07, 2021-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Assign02.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+
+        .auto-style2 {
+            background-color: #ADD8E6;
+        }
+    </style>
+</head>
+<body style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+    <div class="billing-m"; style="width:980px; margin-left:auto; margin-right:auto">
+        <header href="https://www.centennialcollege.ca/">
+            <h1 class="auto-style1">
+                <a href="https://www.centennialcollege.ca/">
+                    <span class="auto-style2"><em>CENTENNIAL COLLEGE</em></span>
+                </a>
+            </h1>
+            <h2 class="auto-style1"><br>ASSIGNMENT 02<br></h2>
+        </header>
+
+        <label for="row">Row(s) <input type="number" id="row" name="row" /></label>
+        <label for="column">Column(s) <input type="number" id="column" name="column" /></label>
+        <input type="button" id="submit" value="submit" onclick="abc()" />
+        <script src="assignment2.js"></script>
+
+        <script>
+            var table = '';
+            for (var r = 1; r <= row; r++) {
+                table += '<tr>';
+                for (var c = 1; c <= column; c++) {
+                    table += '<td>' + c + '</td>';
+                }
+                table += '</tr>';
+            }
+            document.write('<table border=1>' + table + '</table>');
+        </script>
+    </div>
+</body>
+</html>
